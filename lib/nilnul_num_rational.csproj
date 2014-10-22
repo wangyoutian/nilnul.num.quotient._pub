@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D386B69-91D6-4DF2-9CFD-97965AF91F2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul_num_rational</RootNamespace>
+    <AssemblyName>nilnul_num_rational</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add.cs" />
+    <Compile Include="ArithmaticOp.cs" />
+    <Compile Include="BigInt.cs" />
+    <Compile Include="cf\CfX.cs" />
+    <Compile Include="cf\ContinuedFraction.cs" />
+    <Compile Include="cf\ContinuedFraction2.cs" />
+    <Compile Include="cf\Tail.cs" />
+    <Compile Include="cf\SimpleContinuedFraction.cs" />
+    <Compile Include="Rational_inheritFraction.cs" />
+    <Compile Include="Fraction_int_pos.cs" />
+    <Compile Include="Fraction_BigInteger_PositiveNatural.cs" />
+    <Compile Include="Fraction_natural.cs" />
+    <Compile Include="decimal_\Decimal.cs" />
+    <Compile Include="Fraction130622.cs" />
+    <Compile Include="Countable.cs" />
+    <Compile Include="Divide.cs" />
+    <Compile Include="DivideX.cs" />
+    <Compile Include="Enumerable.cs" />
+    <Compile Include="Eq.cs" />
+    <Compile Include="Exponent.cs" />
+    <Compile Include="ExponentX.cs" />
+    <Compile Include="ExtendedX.cs" />
+    <Compile Include="float\Binary.cs" />
+    <Compile Include="float\ExtendedOrder.cs" />
+    <Compile Include="float\Float.cs" />
+    <Compile Include="float\Fraction.cs" />
+    <Compile Include="float\Order.cs" />
+    <Compile Include="float\rel\SameBase.cs" />
+    <Compile Include="float\X.cs" />
+    <Compile Include="Fraction.cs" />
+    <Compile Include="Fraction_noZero.cs" />
+    <Compile Include="Fraction__ClassOfTwoBigInts.cs" />
+    <Compile Include="Inverse.cs" />
+    <Compile Include="Multiply.cs" />
+    <Compile Include="Negate.cs" />
+    <Compile Include="Pow.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rational.cs" />
+    <Compile Include="RationalA.cs" />
+    <Compile Include="RationalI.cs" />
+    <Compile Include="RationalX.cs" />
+    <Compile Include="set\Sum.cs" />
+    <Compile Include="StandardFraction.cs" />
+    <Compile Include="Subtract.cs" />
+    <Compile Include="ZeroX.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="decimal_\rel\" />
+    <Folder Include="func\" />
+    <Folder Include="recurringFloat\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\nilnul%28130115\lib\nilnul%28130621.csproj">
+      <Project>{781321c7-7737-4b1f-ba13-048169502805}</Project>
+      <Name>nilnul%28130621</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.bit%28sln\lib\nilnul.bit130616.csproj">
+      <Project>{109c1344-5bea-4e1a-b662-2c7fe60ac428}</Project>
+      <Name>nilnul.bit130616</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.num.natural%28sln\lib\nilnul.num.natural.csproj">
+      <Project>{e4ac66be-7995-4581-85e4-38d4e1c3e79f}</Project>
+      <Name>nilnul.num.natural</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.obj\lib\nilnul.obj.csproj">
+      <Project>{9807479b-f797-4a18-9feb-0cc576c27308}</Project>
+      <Name>nilnul.obj</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.order\lib\nilnul.order%28removRefs%29.csproj">
+      <Project>{7843991d-6eb2-4464-8a88-729805708922}</Project>
+      <Name>nilnul.order%28removRefs%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.relation%28sln\lib\nilnul.relation%28130616.csproj">
+      <Project>{d9162372-81be-4d8f-8321-e5d53372c59c}</Project>
+      <Name>nilnul.relation%28130616</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

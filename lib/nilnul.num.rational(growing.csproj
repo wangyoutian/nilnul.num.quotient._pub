@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8C3A892-7DE5-4CB1-AB2F-8AB743C12DE0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul.num.rational</RootNamespace>
+    <AssemblyName>nilnul.num.rational%28growing</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accuracy\BoundedX.cs" />
+    <Compile Include="accuracy\bounded\CloseI.cs" />
+    <Compile Include="accuracy\bounded\CloseLeftI.cs" />
+    <Compile Include="accuracy\bounded\CloseRightI.cs" />
+    <Compile Include="accuracy\bounded\OpenI.cs" />
+    <Compile Include="accuracy\bounded\OpenLeftI.cs" />
+    <Compile Include="accuracy\bounded\OpenRightI.cs" />
+    <Compile Include="accuracy\bounded\op\Abs.cs" />
+    <Compile Include="accuracy\bounded\op\Add.cs" />
+    <Compile Include="accuracy\bounded\op\Inverse.cs" />
+    <Compile Include="accuracy\bounded\op\Multi.cs" />
+    <Compile Include="accuracy\bounded\op\Negate.cs" />
+    <Compile Include="accuracy\bounded\op\Scale.cs" />
+    <Compile Include="accuracy\bounded\op\Subtract.cs" />
+    <Compile Include="accuracy\bounded\op\Sum.cs" />
+    <Compile Include="accuracy\bounded\op\Union.cs" />
+    <Compile Include="accuracy\bounded\rel\SuperSet.cs" />
+    <Compile Include="accuracy\Clopen.cs" />
+    <Compile Include="accuracy\Close2.cs" />
+    <Compile Include="accuracy\FiniteA.cs" />
+    <Compile Include="accuracy\FiniteI.cs" />
+    <Compile Include="accuracy\FiniteX.cs" />
+    <Compile Include="accuracy\Inf.cs" />
+    <Compile Include="accuracy\Open2.cs" />
+    <Compile Include="accuracy\OpenClose.cs" />
+    <Compile Include="accuracy\op\Add.cs" />
+    <Compile Include="Base.cs" />
+    <Compile Include="be\Positive.cs" />
+    <Compile Include="be\NonNeg.cs" />
+    <Compile Include="collection\ContainsI.cs" />
+    <Compile Include="Countable1.cs" />
+    <Compile Include="ExtendedI.cs" />
+    <Compile Include="ext\InfI.cs" />
+    <Compile Include="ext\PosInf.cs" />
+    <Compile Include="ext\Lt.cs" />
+    <Compile Include="ext\NegInf.cs" />
+    <Compile Include="ext\Rational.cs" />
+    <Compile Include="float_\based\binary\Periodic.cs" />
+    <Compile Include="float_\based\bi\Comparer.cs" />
+    <Compile Include="float_\based\Comparer.cs" />
+    <Compile Include="float_\based\Dec.cs" />
+    <Compile Include="float_\binary\Periodic.cs" />
+    <Compile Include="float_\Exp.cs" />
+    <Compile Include="float_\Exp_bigIntAssertedPluralAsBase.cs" />
+    <Compile Include="Add.cs" />
+    <Compile Include="ArithmaticOp.cs" />
+    <Compile Include="BigInt.cs" />
+    <Compile Include="cf\CfX.cs" />
+    <Compile Include="cf\ContinuedFraction.cs" />
+    <Compile Include="cf\ContinuedFraction2.cs" />
+    <Compile Include="cf\Tail.cs" />
+    <Compile Include="cf\SimpleContinuedFraction.cs" />
+    <Compile Include="ClosedInterval.cs" />
+    <Compile Include="collection\Bag.cs" />
+    <Compile Include="collection\BagNotEmpty.cs" />
+    <Compile Include="collection\BagNotEmptyNotNull2.cs" />
+    <Compile Include="collection\Bag2.cs" />
+    <Compile Include="collection\BagNotEmpty2.cs" />
+    <Compile Include="collection\Bag3.cs" />
+    <Compile Include="collection\Dict2.cs" />
+    <Compile Include="collection\interval\element\order\GreaterThanOrEqual.cs" />
+    <Compile Include="collection\interval\element\order\GreaterThan.cs" />
+    <Compile Include="collection\interval\element\order\LessThanOrEqualTo_compound  error.cs" />
+    <Compile Include="collection\interval\element\order\LessThanOrEqualTo.cs" />
+    <Compile Include="collection\interval\element\order\EqualityComparer.cs" />
+    <Compile Include="collection\interval\element\order\LessThan.cs" />
+    <Compile Include="collection\interval\element\order\OrderI.cs" />
+    <Compile Include="collection\Interval_orderRational.cs" />
+    <Compile Include="collection\Interval.cs" />
+    <Compile Include="float_\Parse.cs" />
+    <Compile Include="float_\Periodic.cs" />
+    <Compile Include="float_\Based%28T.cs" />
+    <Compile Include="float_\based\Comparer%28TBase.cs" />
+    <Compile Include="Float.cs" />
+    <Compile Include="float_\Based2.cs" />
+    <Compile Include="float_\Tail.cs" />
+    <Compile Include="func\UnitFractionX.cs" />
+    <Compile Include="Interval.cs" />
+    <Compile Include="interval\NegInfToPosInf.cs" />
+    <Compile Include="interval\LowerBoundI.cs" />
+    <Compile Include="interval\UpperBoundI.cs" />
+    <Compile Include="NeighborX.cs" />
+    <Compile Include="neighbor\Clopen.cs" />
+    <Compile Include="neighbor\Close2.cs" />
+    <Compile Include="neighbor\FiniteX.cs" />
+    <Compile Include="neighbor\FiniteI.cs" />
+    <Compile Include="neighbor\Open2.cs" />
+    <Compile Include="neighbor\Inf.cs" />
+    <Compile Include="neighbor\FiniteA.cs" />
+    <Compile Include="neighbor\OpenClose.cs" />
+    <Compile Include="Neighbourhood.cs" />
+    <Compile Include="IntervalI.cs" />
+    <Compile Include="interval\Clopen.cs" />
+    <Compile Include="interval\Close.cs" />
+    <Compile Include="interval\NegInfToUpperOpen.cs" />
+    <Compile Include="interval\NegInfToUpperClose.cs" />
+    <Compile Include="interval\LeftCloseToRightInf.cs" />
+    <Compile Include="interval\LeftOpenToRightInf.cs" />
+    <Compile Include="interval\Open.cs" />
+    <Compile Include="interval\OpenClose.cs" />
+    <Compile Include="op\Divide.cs" />
+    <Compile Include="op\MinX.cs" />
+    <Compile Include="op\Pow.cs" />
+    <Compile Include="op\DivideX.cs" />
+    <Compile Include="op\MaxX.cs" />
+    <Compile Include="op\InverseX.cs" />
+    <Compile Include="op\SquareX.cs" />
+    <Compile Include="op\PowX.cs" />
+    <Compile Include="order\CloseInterval.cs" />
+    <Compile Include="order\ClopenInterval.cs" />
+    <Compile Include="order\OpenCloseInterval.cs" />
+    <Compile Include="order\OpenInterval.cs" />
+    <Compile Include="order\Interval.cs" />
+    <Compile Include="WithinClosedUnitX.cs" />
+    <Compile Include="NonNeg.cs" />
+    <Compile Include="Positive.cs" />
+    <Compile Include="Rational_inheritFraction.Eq.cs" />
+    <Compile Include="order\Comparer.cs" />
+    <Compile Include="order\Rational_selfOrder.cs" />
+    <Compile Include="order\LessThanOrEqualTo2.cs" />
+    <Compile Include="order\LessThanOrEqualTo.cs" />
+    <Compile Include="order\LessThan.cs" />
+    <Compile Include="order\Rational.cs" />
+    <Compile Include="Rational_inheritFraction.cs" />
+    <Compile Include="Fraction_int_pos.cs" />
+    <Compile Include="Fraction_BigInteger_PositiveNatural.cs" />
+    <Compile Include="Fraction_natural.cs" />
+    <Compile Include="Fraction130622.cs" />
+    <Compile Include="Countable.cs" />
+    <Compile Include="Divide.cs" />
+    <Compile Include="DivideX.cs" />
+    <Compile Include="Enumerable.cs" />
+    <Compile Include="Eq.cs" />
+    <Compile Include="Exponent.cs" />
+    <Compile Include="ExponentX.cs" />
+    <Compile Include="ExtendedX.cs" />
+    <Compile Include="float_\based\Binary.cs" />
+    <Compile Include="Fraction.cs" />
+    <Compile Include="Fraction_noZero.cs" />
+    <Compile Include="Fraction__ClassOfTwoBigInts.cs" />
+    <Compile Include="Inverse.cs" />
+    <Compile Include="Multiply.cs" />
+    <Compile Include="Negate.cs" />
+    <Compile Include="PowX.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Rational.cs" />
+    <Compile Include="RationalA.cs" />
+    <Compile Include="RationalI.cs" />
+    <Compile Include="RationalX.cs" />
+    <Compile Include="set\Sum.cs" />
+    <Compile Include="StandardFraction.cs" />
+    <Compile Include="Subtract.cs" />
+    <Compile Include="UnitFraction_inheritFraction.cs" />
+    <Compile Include="ZeroX.cs" />
+    <Compile Include="Rational_inheritFraction2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ext\ord\" />
+    <Folder Include="float_\dec\" />
+    <Folder Include="float_\order\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\nilnul%28130115\lib\nilnul%28130621.csproj">
+      <Project>{781321c7-7737-4b1f-ba13-048169502805}</Project>
+      <Name>nilnul%28130621</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.bit%28sln\lib\nilnul.bit130616.csproj">
+      <Project>{109c1344-5bea-4e1a-b662-2c7fe60ac428}</Project>
+      <Name>nilnul.bit130616</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.collection.set\lib\nilnul.collection.set130710.csproj">
+      <Project>{2aa0c2e4-554d-4e03-bb2d-9325def32ad0}</Project>
+      <Name>nilnul.collection.set130710</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.collection\lib\nilnul.collection%28131218.csproj">
+      <Project>{d36483ec-d896-4eb7-a876-2c030bab56e5}</Project>
+      <Name>nilnul.collection%28131218</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.num.integer%28sln%29\lib\nilnul.num.int_.csproj">
+      <Project>{8ca1d4dc-e1cf-4769-966f-ec26b3fd7802}</Project>
+      <Name>nilnul.num.int_</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.num.natural%28sln\lib\nilnul.num.natural140402.csproj">
+      <Project>{20eec8ae-b51d-4d52-a843-f9fe1cf28336}</Project>
+      <Name>nilnul.num.natural140402</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.obj\lib\nilnul.obj.csproj">
+      <Project>{9807479b-f797-4a18-9feb-0cc576c27308}</Project>
+      <Name>nilnul.obj</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.order\lib\nilnul.order%28131219withInterval.csproj">
+      <Project>{63759cd3-6172-4308-b978-3563645f858e}</Project>
+      <Name>nilnul.order%28131219withInterval</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.relation%28sln\lib\nilnul.relation%28130616.csproj">
+      <Project>{d9162372-81be-4d8f-8321-e5d53372c59c}</Project>
+      <Name>nilnul.relation%28130616</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
